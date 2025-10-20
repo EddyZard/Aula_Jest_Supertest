@@ -3,7 +3,7 @@ const app = express();
 const porta = 3000;
 
 // API que recebe dois números e retorna a soma
-app.get('/adicao', (req, res) => {  // Req é de Requisição e Res é de Resposta
+app.get('/adicao', (req, res) => {        // Req é de Requisição e Res é de Resposta
     const num1 = parseFloat(req.query.n1);
     const num2 = parseFloat(req.query.n2);
     const resultado = num1 + num2;
@@ -14,10 +14,11 @@ app.get('/adicao', (req, res) => {  // Req é de Requisição e Res é de Respos
 // Nesse exemplo estamos atribuindo 3 à n1 e 2 à n2, o resultado deve ser 5
 
 
-// Outras APIs
+// Outras APIs  (que serão adicionadas no futuro):
 // subtracao,
 // multiplicacao
 
+// Rodando o Servidor (estamos abrindo a porta)
 app.listen(porta, () => {
     console.log(`Servidor rodando na porta ${porta}`);
 });
