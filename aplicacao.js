@@ -15,8 +15,22 @@ app.get('/adicao', (req, res) => {        // Req é de Requisição e Res é de 
 
 
 // Outras APIs  (que serão adicionadas no futuro):
-// subtracao,
+// Subtração
+app.get('/subtracao', (req, res) => {        // Req é de Requisição e Res é de Resposta
+    const num1 = parseFloat(req.query.n1);
+    const num2 = parseFloat(req.query.n2);
+    const resultado = num1 - num2;
+    res.send(`Resultado: ${resultado}`);
+});
+
 // multiplicacao
+app.get('/multiplicacao', (req, res) => {        // Req é de Requisição e Res é de Resposta
+    const num1 = parseFloat(req.query.n1);
+    const num2 = parseFloat(req.query.n2);
+    const resultado = num1 * num2;
+    res.send(`Resultado: ${resultado}`);
+});
+
 
 // Rodando o Servidor (estamos abrindo a porta)
 app.listen(porta, () => {
