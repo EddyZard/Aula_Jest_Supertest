@@ -22,6 +22,7 @@ app.get('/subtracao', (req, res) => {        // Req é de Requisição e Res é 
     const resultado = num1 - num2;
     res.send(`Resultado: ${resultado}`);
 });
+// http://localhost:3000/subtracao?n1=3&n2=2
 
 // multiplicacao
 app.get('/multiplicacao', (req, res) => {        // Req é de Requisição e Res é de Resposta
@@ -30,7 +31,7 @@ app.get('/multiplicacao', (req, res) => {        // Req é de Requisição e Res
     const resultado = num1 * num2;
     res.send(`Resultado: ${resultado}`);
 });
-
+// http://localhost:3000/multiplicacao?n1=3&n2=2
 
 // Rodando o Servidor (estamos abrindo a porta)
 app.listen(porta, () => {
