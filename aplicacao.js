@@ -34,6 +34,15 @@ app.get('/multiplicacao', (req, res) => {        // Req é de Requisição e Res
 });
 // http://localhost:3000/multiplicacao?n1=3&n2=2
 
+// divisao
+app.get('/divisao', (req, res) => {        // Req é de Requisição e Res é de Resposta
+    const num1 = parseFloat(req.query.n1);
+    const num2 = parseFloat(req.query.n2);
+    const resultado = num1 / num2;
+    res.send(`Resultado: ${resultado}`);
+});
+// http://localhost:3000/divisao?n1=3&n2=2
+
 // Rodando o Servidor (estamos abrindo a porta)
 app.listen(porta, () => {
     console.log(`Servidor rodando na porta ${porta}`);
