@@ -43,6 +43,10 @@ app.get('/divisao', (req, res) => {        // Req é de Requisição e Res é de
 // http://localhost:3000/divisao?n1=3&n2=2
 
 // Rodando o Servidor (estamos abrindo a porta)
+/*
 app.listen(porta, () => {
     console.log(`Servidor rodando na porta ${porta}`);
 });
+*/
+
+module.exports = app;
