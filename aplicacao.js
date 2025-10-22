@@ -24,6 +24,7 @@ app.get('/subtracao', (req, res) => {        // Req é de Requisição e Res é 
 });
 // http://localhost:3000/subtracao?n1=3&n2=2
 
+
 // multiplicacao
 app.get('/multiplicacao', (req, res) => {        // Req é de Requisição e Res é de Resposta
     const num1 = parseFloat(req.query.n1);
