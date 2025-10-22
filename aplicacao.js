@@ -14,7 +14,6 @@ app.get('/adicao', (req, res) => {        // Req é de Requisição e Res é de 
 // Nesse exemplo estamos atribuindo 3 à n1 e 2 à n2, o resultado deve ser 5
 
 
-// Outras APIs  (que serão adicionadas no futuro):
 // Subtração
 app.get('/subtracao', (req, res) => {        // Req é de Requisição e Res é de Resposta
     const num1 = parseFloat(req.query.n1);
